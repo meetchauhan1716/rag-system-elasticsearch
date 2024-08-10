@@ -10,7 +10,6 @@ This project implements a semantic search engine using OpenAI's language models 
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 
 ## Project Overview
 
@@ -30,8 +29,8 @@ To set up the project, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/meetchauhan1716/rag-system-elasticsearch.git
-   cd repository
+      git clone https://github.com/meetchauhan1716/rag-system-elasticsearch.git
+      cd repository
 
 2. **Install the required packages**:
     Make sure you have Python installed, then run:
@@ -39,10 +38,10 @@ To set up the project, follow these steps:
        "pip install -r requirements.txt"
 
 4. **Set up Elasticsearch Cloud**:
-    Follow the Elasticsearch Cloud documentation "https://www.elastic.co/cloud/" to create an account and set up your Elasticsearch cluster.
+    Follow the Elasticsearch Cloud documentation "https://www.elastic.co/blog/getting-started-with-elastic-cloud" to create an account and set up your Elastic cloud and       configure with machine learning "https://www.elastic.co/guide/en/machine-learning/current/setup.html".
 
-5. **Obtain OpenAI API Key**:
-    Sign up at OpenAI and get your API key. Set it as an environment variable:
+6. **Obtain OpenAI API Key**:
+    Sign up at OpenAI and get your API key "https://platform.openai.com/api-keys". Set it as an environment variable:
 
          export OPENAI_API_KEY='your_api_key'
    
@@ -50,6 +49,7 @@ To set up the project, follow these steps:
       Update your connection settings in the code to point to your Elasticsearch Cloud instance.
 
 ## Usage
+
    To run the project, open the Jupyter Notebook and execute the cells in order. The notebook includes:
    Data preprocessing steps
    Indexing data into Elasticsearch using the "multilingual-e5-small" model for embeddings
@@ -60,6 +60,7 @@ To set up the project, follow these steps:
       jupyter notebook Semantic_Search_with_openai_Elasticsearch.ipynb
 
 ## Contributing
+
    Contributions are welcome! If you have suggestions for improvements or new features, please fork the repository and submit a pull request.
    Fork the repository
    Create a new branch
@@ -67,15 +68,18 @@ To set up the project, follow these steps:
    Submit a pull request
 
 ## Acknowledgments
+
    OpenAI for providing the language models.
    Elasticsearch Cloud for the managed Elasticsearch service.
    The "multilingual-e5-small" model for its embedding capabilities.
 
 ## License
+
    This project is licensed under the MIT License. See the LICENSE file for details.
 
    
 ### Notes:
+
 - Make sure to replace placeholders like `yourusername`, `your_api_key`, `Your Name`, and `Your Email` with your actual information.
 - Adjust any sections as necessary to fit your specific project details or requirements. 
 
