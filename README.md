@@ -1,4 +1,4 @@
-# Semantic Search with OpenAI and Elasticsearch
+# RAG System: Enhancing Semantic Search with OpenAI and Elastic Cloud
 
 This project implements a semantic search engine using OpenAI's language models and Elasticsearch. The goal is to enhance search capabilities by understanding the context and meaning of queries rather than relying solely on keyword matching.
 
@@ -30,29 +30,53 @@ To set up the project, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/repository.git
+   git clone https://github.com/meetchauhan1716/rag-system-elasticsearch.git
    cd repository
-
-
 
 2. **Install the required packages**:
     Make sure you have Python installed, then run:
-    "pip install -r requirements.txt"
+   ```bash
+       "pip install -r requirements.txt"
 
-
-3. Set up Elasticsearch Cloud:
+4. **Set up Elasticsearch Cloud**:
     Follow the Elasticsearch Cloud documentation "https://www.elastic.co/cloud/" to create an account and set up your Elasticsearch cluster.
 
-5. Obtain OpenAI API Key:
-    Sign up at OpenAI and get your API key. Set it as an environment variable: 
+5. **Obtain OpenAI API Key**:
+    Sign up at OpenAI and get your API key. Set it as an environment variable:
 
+         export OPENAI_API_KEY='your_api_key'
+   
+7. **Configure Elasticsearch Connection**:
+      Update your connection settings in the code to point to your Elasticsearch Cloud instance.
 
+## Usage
+   To run the project, open the Jupyter Notebook and execute the cells in order. The notebook includes:
+   Data preprocessing steps
+   Indexing data into Elasticsearch using the "multilingual-e5-small" model for embeddings
+   Querying Elasticsearch using OpenAI's models
+   Evaluating search results
+   Example command to start Jupyter Notebook:
+   
+      jupyter notebook Semantic_Search_with_openai_Elasticsearch.ipynb
 
+## Contributing
+   Contributions are welcome! If you have suggestions for improvements or new features, please fork the repository and submit a pull request.
+   Fork the repository
+   Create a new branch
+   Make your changes
+   Submit a pull request
 
+## Acknowledgments
+   OpenAI for providing the language models.
+   Elasticsearch Cloud for the managed Elasticsearch service.
+   The "multilingual-e5-small" model for its embedding capabilities.
 
-
-
-
-
+## License
+   This project is licensed under the MIT License. See the LICENSE file for details.
 
    
+### Notes:
+- Make sure to replace placeholders like `yourusername`, `your_api_key`, `Your Name`, and `Your Email` with your actual information.
+- Adjust any sections as necessary to fit your specific project details or requirements. 
+
+This updated README now reflects the use of Elasticsearch Cloud and the specific model you are using for embeddings.
